@@ -1,0 +1,137 @@
+/* 🌟 Container */
+.data-table-container {
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+  background: #f8f9fb;
+  min-height: 100vh;
+  color: #222;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header Section */
+.data-table-container h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.data-table-container h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* 🔍 Search Bar */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 8px;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 4px rgba(0, 119, 204, 0.4);
+}
+
+.filter-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 🧾 Table Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background: white;
+  padding: 10px;
+}
+
+/* 📊 Data Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  min-width: 130px;
+}
+
+.data-table th {
+  background-color: #003366;
+  color: white;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Zebra Stripes */
+.even-row {
+  background-color: #f9f9f9;
+}
+
+.odd-row {
+  background-color: #ffffff;
+}
+
+/* Hover Effect */
+.data-table tr:hover {
+  background-color: #e8f4ff;
+  transition: background-color 0.3s;
+}
+
+/* No Results Row */
+.no-results {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-input {
+    width: 90%;
+  }
+
+  .data-table-container {
+    padding: 20px 10px;.removed-table {
+  border: 2px solid #dc2626;
+}
+.removed-table th {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+.removed-table td {
+  background-color: #fff5f5;
+}
+
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
+}
